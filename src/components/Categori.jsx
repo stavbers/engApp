@@ -1,30 +1,29 @@
+import '../Categori.css'
 function Categori(props) {
-    const { id, word, translate, exempleEn, exempleRu } = props;
- 
+    const {id, name, img, bgColor} = props
+    console.log(props)
     
+    // const { id, word, translate, exempleEn, exempleRu } = props;
+
+    // function generExaple(example) {
+    //     return example.split('\r').map((el, ind) => (
+    //         <p key={ind}>
+    //             {ind + 1}
+    //             {').'} {el}
+    //         </p>
+    //     ));
+    // }
 
     return (
-        <div id={id} className='row'>
-            <div className='col'>
-                <div className='card'>
-                    <div className='card-image'></div>
+                <div className='card' id={id} style={{background: bgColor}}>
                     <div className='card-content'>
-                        <p>{word}</p>
-                        <p style={{ color: 'red', fontSize: '22px' }}>
-                            {translate}
-                        </p>
-                        {exempleEn.split('\r').map((el, ind) => (
-                            <p key={ind}>
-                            {ind + 1}{').'} {el}</p>
-                        ))}
-                        {exempleRu.split('\r').map((el, ind) => (
-                          <p key={ind}>
-                            {ind + 1}{').'} {el}</p>
-                        ))}
+                      <img className="card-img" src={img} alt="name" />
+                      <span className="card-name" >{name}</span>
+                        {/* {generExaple(exempleEn)}
+                        {generExaple(exempleRu)} */}
                     </div>
                 </div>
-            </div>
-        </div>
+
     );
 }
 

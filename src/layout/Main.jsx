@@ -5,7 +5,7 @@ function Main() {
     const [categori, setCategori] = useState([]);
     const [loading, setLoading] = useState(true);
     useEffect(() => {
-        fetch('http://apien.stavbers.site/api')
+        fetch('http://apien.stavbers.site/api/categori')
             .then((resp) => resp.json())
             .then((data) => {
                 setCategori(data);
@@ -13,7 +13,7 @@ function Main() {
             });
     }, []);
     return (
-        <main>
+        <main className='container'>
             {loading ? <Preloader /> : <CategoriList categori={categori} />}
         </main>
     );
