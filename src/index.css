@@ -12,9 +12,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+#root {
+  background-color: #eceff1;
+  background-color: #001e3c;
+}
 .container {
-  max-width: 1170px;
+  max-width: 1400px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -23,6 +26,8 @@ code {
 .categoriList {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
   justify-content: center;
   gap: 30px 30px;
 }

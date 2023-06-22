@@ -1,7 +1,7 @@
 import '../Categori.css'
 function Categori(props) {
     const {id, name, img, bgColor} = props
-    console.log(props)
+    // console.log(props)
     
     // const { id, word, translate, exempleEn, exempleRu } = props;
 
