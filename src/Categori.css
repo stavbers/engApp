@@ -29,7 +29,7 @@ box-shadow: 0px 2px 12px 1px rgba(0,0,0,0.72);
 .simple-card {
   background-color: #004d40;
   color: aliceblue;
-  text-shadow: 2px 2px 2px black;
+  text-shadow: 1px 1px 1px black;
   padding: 20px;
   margin-bottom: 15px;
   font-size: 14px;
