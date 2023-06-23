@@ -13,9 +13,9 @@ return (
   <div id={id} className="simple-card">
     <div className="simple-card__name">{word.toUpperCase()}</div>
     <div className="simple-card__transl">{translate}</div>
-    <div className="simple-card__exemple">{generExaple(exempleEn)}</div>
-    <div className="simple-card__exemple simple-card__exemple_ru">{generExaple(exempleRu)}</div>
-    <Accord />
+    {/* <div className="simple-card__exemple">{generExaple(exempleEn)}</div>
+    <div className="simple-card__exemple simple-card__exemple_ru">{generExaple(exempleRu)}</div> */}
+    <Accord generExaple={generExaple} exempleEn={exempleEn} exempleRu={exempleRu}/>
   </div>
 )
 
