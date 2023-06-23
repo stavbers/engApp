@@ -22,13 +22,6 @@ function SingleCategori() {
         </>
     );
 
-    // function generExaple(example) {
-    //     return example.split('\r').map((el, ind) => (
-    //         <p key={ind}>
-    //             {ind + 1}
-    //             {').'} {el}
-    //         </p>
-    //     ));
-    // }
+
 }
 export { SingleCategori };
