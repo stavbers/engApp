@@ -1,3 +1,4 @@
+import Accord from './Accord'
 function Card(props) {
 const {id, word, translate, exempleEn, exempleRu} = props
 function generExaple(example) {
@@ -14,6 +15,7 @@ return (
     <div className="simple-card__transl">{translate}</div>
     <div className="simple-card__exemple">{generExaple(exempleEn)}</div>
     <div className="simple-card__exemple simple-card__exemple_ru">{generExaple(exempleRu)}</div>
+    <Accord />
   </div>
 )
 
