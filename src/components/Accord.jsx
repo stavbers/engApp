@@ -16,7 +16,7 @@ export default function Accord(props) {
         <Accordion>
             <AccordionItem>
                 <AccordionItemHeading>
-                    <AccordionItemButton>
+                    <AccordionItemButton className='accord-btn'>
                         ENG
                     </AccordionItemButton>
                 </AccordionItemHeading>
@@ -26,7 +26,7 @@ export default function Accord(props) {
             </AccordionItem>
             <AccordionItem>
                 <AccordionItemHeading>
-                    <AccordionItemButton>
+                    <AccordionItemButton className='accord-btn'>
                        RUS
                     </AccordionItemButton>
                 </AccordionItemHeading>

@@ -42,3 +42,19 @@ code {
   border-radius: 5px;
 
 }
+
+.accord-btn{
+  max-width: 1350px;
+  background-color: #ff7043;
+  padding: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-bottom: 2px;
+}
+
+.accordion__panel {
+  margin-top: -2px;
+  background-color: #ff7043;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
