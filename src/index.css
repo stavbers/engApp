@@ -31,3 +31,14 @@ code {
   justify-content: center;
   gap: 30px 30px;
 }
+.btn {
+  background-color: #ff5722;
+  padding: 6px 20px;
+  cursor: pointer;
+  margin: 5px;
+  color: #eceff1;
+  text-shadow: 2px 2px 2px rgb(177, 175, 175);
+  border: none;
+  border-radius: 5px;
+
+}
