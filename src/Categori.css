@@ -25,3 +25,31 @@ box-shadow: 0px 2px 12px 1px rgba(0,0,0,0.72);
   text-decoration: none;
 }
 
+
+.simple-card {
+  background-color: #004d40;
+  color: aliceblue;
+  text-shadow: 2px 2px 2px black;
+  padding: 20px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+.simple-card:not():last-child{
+  
+}
+.simple-card__name {
+  font-size: 18px;
+  text-align: center;
+}
+.simple-card__transl {
+  text-align: center;
+  font-size: 18px;
+}
+.simple-card__exemple {
+  
+}
+.simple-card__exemple_ru {
+  border-top: 2px solid aliceblue;
+}
