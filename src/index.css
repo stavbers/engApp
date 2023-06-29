@@ -22,7 +22,9 @@ code {
   padding-left: 15px;
   padding-right: 15px;
 }
-
+a {
+  text-decoration: none;
+}
 .categoriList {
   display: flex;
   flex-wrap: wrap;
@@ -57,4 +59,34 @@ code {
   background-color: #ff7043;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+
+.notFound h2, h1{
+margin: 0;
+}
+
+.notFound {
+  position: relative;
+  height: 100vh;
+  color: aliceblue;
+}
+.notFound-wrp {
+  width: 240px;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+.notFound-wrp h1 {
+  font-size: 100px;
+}
+.notFound-wrp h2 {
+  margin-bottom: 15px;
+}
+.notFound-wrp a {
+  color: aliceblue;
+  text-decoration: underline;
 }
