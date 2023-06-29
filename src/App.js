@@ -21,7 +21,6 @@ function App() {
     <>
       <Router>
       <ThemeProvider theme={AppTheme}>
-        <main className='container'>
           <Switch>
               <Route exact path='/'>
                 <Home/>
@@ -31,7 +30,6 @@ function App() {
               <Route path='/categori/:name' component={SingleCategori}/>
               <Route component={NotFound}/>
           </Switch>
-        </main>
         </ThemeProvider>
       </Router>
     </>

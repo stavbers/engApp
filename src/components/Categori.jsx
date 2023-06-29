@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import '../Categori.css';
+
 function Categori(props) {
     const { id, name, img, bgColor } = props;
 
