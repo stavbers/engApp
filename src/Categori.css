@@ -41,6 +41,9 @@ box-shadow: 0px 2px 12px 1px rgba(0,0,0,0.72);
   font-size: 18px;
   text-align: center;
 }
+.simple-card__numb {
+  position: absolute;
+}
 .simple-card__transl {
   text-align: center;
   font-size: 18px;
