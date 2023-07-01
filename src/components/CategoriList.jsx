@@ -2,9 +2,7 @@ import { Categori } from './Categori';
 
 function CategoriList(props) {
     const { categori = [] } = props;
-    console.log(categori)
     
-
     return (
         <div className='categoriList'>
             {categori.length ? (

@@ -26,12 +26,15 @@ a {
   text-decoration: none;
 }
 .categoriList {
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 1vw;
   padding-top: 20px;
   padding-bottom: 20px;
   justify-content: center;
-  gap: 30px 30px;
+  /* gap: 30px 30px; */
 }
 .btn {
   background-color: #ff5722;
@@ -89,4 +92,12 @@ margin: 0;
 .notFound-wrp a {
   color: aliceblue;
   text-decoration: underline;
+}
+
+@media screen and (max-width: 500px) {
+  .categoriList {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5vw;
+
+  }
 }
