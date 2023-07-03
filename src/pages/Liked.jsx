@@ -16,15 +16,14 @@ function Liked() {
     }
 }, []);
 
-    return (
-        <>
-            <button className='btn' onClick={goBack}>
-                Back
-            </button>
-            {items.map((item, index) => (
-                <LikedCard key={index} {...items} />
-            ))}
-        </>
-    );
+return (
+    <>
+    <button className='btn' onClick={goBack}>Back</button>
+        {!items.length ? <Preloader /> 
+            : items.map((item, index) => (
+                <LikedCard key={index} {...item} />
+                ))}
+    </>
+);
 }
 export { Liked };

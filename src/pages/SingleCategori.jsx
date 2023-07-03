@@ -32,6 +32,7 @@ function SingleCategori() {
     
     return (
         <>
+        <button className='btn' onClick={goBack}>Back</button>
             {!data.length ? <Preloader /> 
                 : data.map((item, index) => (
                     <Card key={index} {...item} AddLocalSt={AddLocalSt} />
