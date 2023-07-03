@@ -1,7 +1,7 @@
 import Accord from './Accord'
-function Card(props) {
-const {id, word, translate, exempleEn, exempleRu, AddLocalSt} = props
-
+function LikedCard(props) {
+const {id, word, translate, exempleEn, exempleRu} = props
+console.log(props)
 
 function generExaple(example) {
   return example.split('\r').map((el, ind) => (
@@ -16,11 +16,10 @@ return (
     <span className="simple-card__numb">{id}).</span>
     <div className="simple-card__name">{word.toUpperCase()}</div>
     <div className="simple-card__transl">{translate}</div>
-    <button className="simple-card__btn" onClick={()=> {AddLocalSt(props)}}>like</button>
     <Accord generExaple={generExaple} exempleEn={exempleEn} exempleRu={exempleRu}/>
   </div>
 )
 
 
 }
-export {Card}
+export {LikedCard}
