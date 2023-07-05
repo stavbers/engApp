@@ -1,6 +1,5 @@
-import Accord from './Accord'
 function LikedCard(props) {
-const {id, word, translate, exempleEn, exempleRu} = props.el
+const {id, word, translate} = props.el
 
 
 return (
