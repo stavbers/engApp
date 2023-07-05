@@ -7,12 +7,10 @@ import { Preloader } from '../components/Preloader';
 function Liked() {
   const { goBack } = useHistory();
   const [items, setItems] = useState([]);
-  const [loading, setLoading] = useState(true);
   useEffect(() => {
     const el = JSON.parse(localStorage.getItem('liked'));
     if (el) {
         setItems(el);
-        setLoading(false);
     }
 }, []);
 

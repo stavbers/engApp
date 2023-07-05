@@ -1,7 +1,6 @@
 import Accord from './Accord'
 function LikedCard(props) {
 const {id, word, translate, exempleEn, exempleRu} = props.el
-console.log(props.el)
 
 
 return (
