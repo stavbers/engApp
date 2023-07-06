@@ -16,6 +16,9 @@ code {
   background-color: #eceff1;
   background-color: #001e3c;
 }
+.hide {
+  display: none;
+}
 .container {
   max-width: 1400px;
   margin: 0 auto;
