@@ -1,4 +1,6 @@
 import Accord from './Accord'
+
+import '../Heart.css'
 function Card(props) {
 const {id, word, translate, exempleEn, exempleRu, AddLocalSt} = props
 
