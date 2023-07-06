@@ -60,15 +60,23 @@ box-shadow: 0px 2px 12px 1px rgba(0,0,0,0.72);
 }
 
 @media screen and (max-width: 500px)  {
+  .card {
+    border-radius: 15px;
+  }
   .card-content {
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
     padding: 12px 10px;
   }
   .card-img {
     width: 50px;
     height: 40px;
     margin-right: 5px;
+  }
+  .card-name {
+    margin-top: 0px;
   }
 }
