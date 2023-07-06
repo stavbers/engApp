@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { CategoriList } from '../components/CategoriList';
+import {Header} from '../components/Header'
 import { getAllCategories } from '../api';
 import { Preloader } from '../components/Preloader';
 function Home() {
@@ -14,7 +15,14 @@ function Home() {
     }, []);
     return (
         <main className='container'>
-            {loading ? <Preloader /> : <CategoriList categori={categori} />}
+            {loading ? <Preloader /> : 
+           <div>
+           <Header/>
+           <CategoriList categori={categori} />
+
+           </div> 
+
+            }
         </main>
     );
 }

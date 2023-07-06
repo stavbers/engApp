@@ -1,12 +1,35 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
-import LinearProgress from '@mui/material/LinearProgress';
+import '../preloader.css'
+
 
  function Preloader() {
     return (
-        <Box sx={{ width: '100%' }}>
-            <LinearProgress />
-        </Box>
+        <div className="container">
+        <div className="wrapper">
+           <div className="loader">
+              <div className="dot"></div>
+           </div>
+           <div className="loader">
+              <div className="dot"></div>
+           </div>
+           <div className="loader">
+              <div className="dot"></div>
+           </div>
+           <div className="loader">
+              <div className="dot"></div>
+           </div>
+           <div className="loader">
+              <div className="dot"></div>
+           </div>
+           <div className="loader">
+              <div className="dot"></div>
+           </div>
+        </div>
+        <div className="text">
+           Please wait
+        </div>
+     </div>
+
     );
 }
 
