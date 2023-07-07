@@ -13,7 +13,7 @@ function Categori(props) {
             <Link to={`/categori/${name}`} className='card-action'>
                 <div className='card-content'>
                     <img className='card-img' src={img} alt='name' />
-                    <span className='card-name'>{name}</span>
+                    <span className='card-name'>{name.toUpperCase()}</span>
                 </div>
             </Link>
         </div>

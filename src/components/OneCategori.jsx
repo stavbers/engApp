@@ -2,7 +2,7 @@ import { Card } from '../components/Card';
 function OneCategori(props) {
     // console.log(props);
     const elem = props.data;
-    console.log(elem)
+
     
     return (
         <>

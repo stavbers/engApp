@@ -14,7 +14,8 @@ function SingleCategori() {
     });
     const { name } = useParams();
     const { goBack } = useHistory();
-
+    console.log(name)
+    
     function AddLocalSt(props) {
         setdDatarr((prev) => [...prev, { el: props }]);
     }
@@ -31,13 +32,13 @@ function SingleCategori() {
     // console.log(data)
     
     return (
-        <>
+        <div className="asdasdadadas">
         <button className='btn' onClick={goBack}>Back</button>
             {!data.length ? <Preloader /> 
                 : data.map((item, index) => (
                     <Card key={index} {...item} AddLocalSt={AddLocalSt} />
                     ))}
-        </>
+        </div>
     );
 
 
